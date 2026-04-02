@@ -87,7 +87,11 @@ h2 {
     /* 表示 */
 }
 
-.nav-menu a {
+.nav-menu ul {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    /* ← ここで間隔調整 */
     color: #fff;
     font-size: 35px;
 }
