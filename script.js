@@ -1,18 +1,18 @@
-const toggle = document.querySelector('.nav-toggle');
 const menu = document.querySelector('.nav-menu');
+const toggle = document.querySelector('.nav-toggle');
 
-if (toggle) {
-    toggle.addEventListener('click', () => {
-        toggle.classList.toggle('active');
-        menu.classList.toggle('active');
-    });
-}
+toggle.addEventListener('click', () => {
+    menu.classList.toggle('active');
+    toggle.classList.toggle('active');
+    document.body.classList.toggle('no-scroll'); // ← 追加
+});
 
 // fechar menu ao clicar
 document.querySelectorAll('.nav-menu a').forEach(link => {
     link.addEventListener('click', () => {
         menu.classList.remove('active');
         toggle.classList.remove('active');
+        document.body.classList.remove('no-scroll'); // ← 追加
     });
 });
 

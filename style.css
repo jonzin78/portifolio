@@ -36,6 +36,9 @@ h2 {
     justify-content: center;
     gap: 6px;
     cursor: pointer;
+    z-index: 10000;
+    transition: transform 0.7s ease;
+    /* animacao para o lado (botao X) */
 }
 
 .nav-toggle span {
@@ -57,30 +60,41 @@ h2 {
     background: #fff;
 }
 
+.nav-toggle.active {
+    transform: translateX(80px);
+    /* decidir a pocisao do botao apos clicar */
+}
+
 /* MENU */
 .nav-menu {
     position: fixed;
-    inset: 0;
+    top: 0;
+    right: 0;
+    width: 450px;
+    height: 100%;
     background: rgba(0, 0, 0, 0.9);
     display: flex;
     justify-content: center;
     align-items: center;
-
-    opacity: 0;
-    pointer-events: none;
+    transform: translateX(100%);
+    /* 右に隠す */
     transition: 0.4s;
     z-index: 9998;
 }
 
 .nav-menu.active {
-    opacity: 1;
-    pointer-events: auto;
+    transform: translateX(0);
+    /* 表示 */
 }
 
 .nav-menu a {
     color: #fff;
-    font-size: 28px;
-    text-decoration: none;
+    font-size: 35px;
+}
+
+/* nao deixar scrolar (bloquear) */
+body.no-scroll {
+    overflow: hidden;
 }
 
 /* SECTIONS */
