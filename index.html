@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portfolio</title>
+
+    <!-- RESET CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/the-new-css-reset/css/reset.min.css">
+
+    <!-- FONT -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Noto+Sans+JP:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- ===== LOADER ===== -->
+    <div id="loader">
+        <div class="loader-content">
+            <svg class="logo-svg" viewBox="0 0 300 100">
+                <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle">
+                    Jonathan
+                </text>
+            </svg>
+        </div>
+    </div>
+
+    <!-- ===== HEADER ===== -->
+    <header class="header">
+
+        <h1 class="logo">JonathanYagi</h1>
+
+        <!-- botão menu -->
+        <div class="nav-toggle">
+            <span></span>
+            <span></span>
+        </div>
+
+    </header>
+
+    <!-- ===== MENU ===== -->
+    <nav class="nav-menu">
+        <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="work.html">Work</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <!-- ===== HERO ===== -->
+        <section class="hero fade">
+            <!-- escreve aqui -->
+            <h2>Front-end Developer</h2>
+            <p>Eu crio interfaces modernas e minimalistas.</p>
+        </section>
+
+        <!-- ===== ABOUT ===== -->
+        <section class="about fade" id="about">
+
+            <h2>About</h2>
+
+            <!-- resumo -->
+            <p>Escreva um resumo sobre você aqui.</p>
+
+            <a href="about.html" class="btn">Ver mais</a>
+
+        </section>
+
+        <!-- ===== WORK ===== -->
+        <section class="work fade" id="work">
+
+            <h2>Work</h2>
+
+            <div class="work-list">
+
+                <div class="work-card">
+                    <img src="./images/project.jpg" alt="">
+                    <div class="work-info">
+                        <p class="title">Nome do Projeto</p>
+                        <p class="desc">Descrição curta</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <a href="work.html" class="btn">Ver mais</a>
+
+        </section>
+
+        <!-- ===== CONTACT ===== -->
+        <section class="contact fade">
+            <h2>Contact</h2>
+            <p>jonathanyagui@gmail.com</p>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
