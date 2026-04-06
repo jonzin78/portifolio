@@ -33,7 +33,18 @@ fades.forEach(el => observer.observe(el));
 window.addEventListener('load', () => {
     const loader = document.getElementById('loader');
 
-    setTimeout(() => {
-        loader.classList.add('hide');
-    }, 3000);
+    const isFirstVisit = !sessionStorage.getItem('visited');
+
+    if (isFirstVisit) {
+        // 初回（このタブで）
+        sessionStorage.setItem('visited', 'true');
+
+        setTimeout(() => {
+            loader.classList.add('hide');
+        }, 3000);
+
+    } else {
+        // リロード時
+        loader.style.display = 'none';
+    }
 });
