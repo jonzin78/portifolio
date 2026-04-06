@@ -139,14 +139,14 @@ h2 {
 .nav-toggle.active {
     position: fixed;
     top: 40px;
-    /* 上の位置 */
+    /* cima */
     right: -165px;
-    /* ← ここ重要 */
+    /* important */
     width: 450px;
-    /* ← メニューと同じ幅 */
+    /* igual a largura do menu */
     display: flex;
     justify-content: center;
-    /* 横中央 */
+    /* meio-lado */
     align-items: center;
     transform: none;
 }
