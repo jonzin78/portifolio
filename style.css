@@ -39,19 +39,9 @@ h2 {
     z-index: 9998;
     transition: transform 0.7s ease;
     /* animacao para o lado (botao X) */
+    /* X animação */
 }
 
-/* X animação */
-.nav-toggle {
-    position: absolute;
-    right: 10%;
-    top: 22px;
-    cursor: pointer;
-    z-index: 9998;
-    font-weight: bold;
-    font-size: 14px;
-    letter-spacing: 2px;
-}
 
 .menu-text,
 .close-text {
@@ -147,8 +137,18 @@ h2 {
 }
 
 .nav-toggle.active {
-    transform: translateX(80px);
-    /* decidir a pocisao do botao apos clicar */
+    position: fixed;
+    top: 40px;
+    /* 上の位置 */
+    right: -165px;
+    /* ← ここ重要 */
+    width: 450px;
+    /* ← メニューと同じ幅 */
+    display: flex;
+    justify-content: center;
+    /* 横中央 */
+    align-items: center;
+    transform: none;
 }
 
 /* MENU */
