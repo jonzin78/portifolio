@@ -12,7 +12,7 @@ document.querySelectorAll('.nav-menu a').forEach(link => {
     link.addEventListener('click', () => {
         menu.classList.remove('active');
         toggle.classList.remove('active');
-        document.body.classList.remove('no-scroll'); // ← 追加
+        document.body.classList.remove('no-scroll');
     });
 });
 
@@ -33,9 +33,7 @@ fades.forEach(el => observer.observe(el));
 window.addEventListener('load', () => {
     const loader = document.getElementById('loader');
 
-    if (loader) {
-        setTimeout(() => {
-            loader.classList.add('hide');
-        }, 2000);
-    }
+    setTimeout(() => {
+        loader.classList.add('hide');
+    }, 3000);
 });
