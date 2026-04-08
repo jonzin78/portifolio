@@ -416,6 +416,72 @@ section {
     width: 100%;
 }
 
+.work-list {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    overflow-x: auto;
+    padding: 20px;
+    scroll-snap-type: x mandatory;
+}
+
+/* スクロールバー消す（おしゃれ） */
+.work-list::-webkit-scrollbar {
+    display: none;
+}
+
+.work-card {
+    min-width: 300px;
+    flex-shrink: 0;
+    scroll-snap-align: start;
+}
+
+.work-card img {
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+}
+
+/* テキスト */
+.work-info {
+    margin-top: 10px;
+}
+
+.title {
+    font-weight: bold;
+}
+
+.desc {
+    color: #777;
+}
+
+/* workの一覧ページ */
+
+.work-page {
+    padding: 100px 40px;
+    background: #f5f5f5;
+}
+
+.work-page h2 {
+    font-size: 40px;
+    margin-bottom: 60px;
+}
+
+/* 2カラム */
+.work-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px;
+}
+
+.work-card img {
+    width: 100%;
+    display: block;
+}
+
 /* ANIMAÇÃO */
 .fade {
     opacity: 0;
@@ -510,5 +576,10 @@ section {
 
     .about-info {
         text-align: center;
+    }
+
+    .work-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
     }
 }
