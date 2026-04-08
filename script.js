@@ -48,3 +48,17 @@ window.addEventListener('load', () => {
         loader.style.display = 'none';
     }
 });
+
+//スクロール bar
+
+const workList = document.querySelector(".work-list");
+const bar = document.querySelector(".scroll-bar-inner");
+
+workList.addEventListener("scroll", () => {
+    const scrollLeft = workList.scrollLeft;
+    const maxScroll = workList.scrollWidth - workList.clientWidth;
+
+    const scrollPercent = scrollLeft / maxScroll;
+
+    bar.style.width = scrollPercent * 100 + "%";
+});
