@@ -492,6 +492,20 @@ section {
     gap: 80px;
 }
 
+.scroll-bar {
+    width: 50%;
+    height: 2px;
+    background: #ddd;
+    margin: 10px auto;
+    position: relative;
+}
+
+.scroll-bar-inner {
+    height: 100%;
+    width: 30%;
+    background: #000;
+}
+
 /* 全体 */
 .single {
     padding-bottom: 100px;
