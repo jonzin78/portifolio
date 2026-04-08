@@ -219,6 +219,7 @@ section {
     border: 1px solid #000;
     color: #000;
     text-decoration: none;
+    transition: 0.3s;
 }
 
 .btn:hover {
@@ -492,6 +493,8 @@ section {
     gap: 80px;
 }
 
+
+/* スクロールバー */
 .scroll-bar {
     width: 50%;
     height: 2px;
