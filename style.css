@@ -9,6 +9,14 @@ body {
     font-family: 'Poppins', 'Noto Sans JP', sans-serif;
     background: var(--bg);
     color: var(--text);
+    letter-spacing: 2px;
+}
+
+.inner {
+    max-width: 1200px;
+    width: 87.5%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* HEADER */
@@ -214,6 +222,25 @@ section {
     color: #000;
 }
 
+.hero {
+    position: relative;
+    height: 100vh;
+    /* imagem principal */
+    background: url("images/mainvisual.JPG") no-repeat center/cover;
+}
+
+/* a logo no meio */
+.hero-grafitti {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    /* サイズ */
+    max-width: 80%;
+}
+
+
 /* ABOUT */
 .about {
     display: flex;
@@ -302,6 +329,80 @@ section {
     color: #000;
 }
 
+/* about single page */
+
+.center {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* ABOUTレイアウト */
+.about-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 50px;
+}
+
+/* image */
+.about-img img {
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* text */
+.about-info {
+    text-align: left;
+    max-width: 400px;
+}
+
+.about-info p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.about-section {
+    padding: 100px 20px;
+}
+
+/* 4 */
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px 200px;
+}
+
+/* かくブロック */
+.item h3 {
+    font-size: 26px;
+    border-bottom: 1px solid #000;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.item p {
+    margin-top: 15px;
+    line-height: 1.8;
+    text-align: left;
+}
+
+.about-intro {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 40px 30px;
+    background: #fff;
+    border-radius: 8px;
+    line-height: 1.8;
+    border: 1px solid #e5e5e5;
+}
+
+/* para parecer uma carta */
+.about-intro p {
+    font-family: 'Noto Sans JP', sans-serif;
+    letter-spacing: 0.5px;
+}
 
 /* WORK */
 .work-card {
@@ -366,6 +467,13 @@ section {
     }
 }
 
+
+.copy {
+    margin-bottom: 12px;
+    margin-right: 12px;
+    text-align: end;
+}
+
 /* スマホサイズ */
 
 @media (max-width: 768px) {
@@ -392,6 +500,15 @@ section {
 
     .about-title {
         font-size: 40px;
+        text-align: center;
+    }
+
+    .about-box {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-info {
         text-align: center;
     }
 }

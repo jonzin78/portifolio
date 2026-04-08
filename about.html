@@ -22,7 +22,7 @@
 <body>
 
     <header class="header">
-        <h1 class="logo"><a href="index.html">WHO AM I</a></h1>
+        <h1 class="logo"><a href="index.html">ABOUT</a></h1>
 
         <!-- botão menu -->
         <div class="nav-toggle">
@@ -42,33 +42,88 @@
 
 
     <!-- botão voltar -->
-    <a href="index.html" class="back-btn">← BACK</a>
+    <div class="back-inner">
+        <a href="index.html" class="back-btn">BACK</a>
+    </div>
 
     <main>
+        <div class="inner">
+            <h2 class="center">WHO AM I</h2>
 
-        <section class="about fade">
+            <!-- ここ追加 -->
+            <div class="about-box">
 
-            <h2>WHO AM I</h2>
+                <!-- 左：写真 -->
+                <div class="about-img">
+                    <img src="images/profile.jpg" alt="profile">
+                </div>
 
-            <p>
-                八木ジョナタン / Jonathan Yagi
-            </p>
-
-            <p>
-                Webデザイン・フロントエンドを学んでいる学生です。<br>
-                シンプルで洗練されたデザインと、使いやすいUIを意識した制作をしています。
-            </p>
-
-            <p>
-                HTML / CSS / JavaScript を中心に、ポートフォリオサイトやUIデザインの制作に取り組んでいます。
-            </p>
-
-            <p>
-                将来は、デザインと技術の両方を活かせるWebクリエイターになることが目標です。
-            </p>
-
-        </section>
+                <!-- 右：テキスト -->
+                <div class="about-info">
+                    <p><strong>Name:</strong><br>
+                        八木ジョナタン<br>
+                        Jonathan Yagi
+                    </p>
+                    <p><strong>年齢:</strong><br>
+                        2005年8月7日生まれ
+                    </p>
+                    <p><strong>国籍:</strong><br>
+                        ブラジル
+                    </p>
+                    <p><strong>趣味:</strong><br>
+                        バスケットボールをやること、<br>
+                        出かけること、<br>
+                        ゲームが好き、料理も好き、<br>
+                        グラフィティの絵や文字を描くことが好きです。<br>
+                    </p>
+                    <p><strong>拠点:</strong><br>
+                        愛知県一宮市
+                    </p>
+                </div>
+            </div>
+            <div class="about-intro">
+                <p>
+                    シンプルで見やすいUIデザインを意識しながら、Webサイト制作を行っています。<br>
+                    デザインからコーディングまで一貫して対応することで、統一感のある制作を心がけています。<br><br>
+                    新しい技術や表現にも積極的に挑戦し、日々スキルの向上に努めています。
+                </p>
+            </div>
+            <section class="about-section">
+                <div class="about-grid">
+                    <div class="item">
+                        <h3>Work Ethic</h3>
+                        <p>
+                            集中して作業に取り組むことを得意としており、<br>一つのタスクにしっかり向き合いながら<br>作業を進めることを大切にしています。
+                            また、<br>必要なコミュニケーションはしっかり取りつつ、効率よく業務を進めることを意識しています。 </p>
+                    </div>
+                    <div class="item">
+                        <h3>Skill</h3>
+                        <p>
+                            HTML・CSS・JavaScriptを用いたWebサイト制作を<br>中心に、Figmaによるデザイン制作にも対応しています。
+                            デザインからコーディングまで一貫して行うことで、<br>統一感のあるWebサイト制作を心がけています。 </p>
+                    </div>
+                    <div class="item">
+                        <h3>Strength</h3>
+                        <p>
+                            ユーザーにとって直感的で使いやすい、シンプルなUIデザインを得意としています。<br>
+                            日本語・ポルトガル語・スペイン語の3言語を活かし、<br>多様なニーズに対応可能です。<br>
+                            常に新しい技術や表現に挑戦し、より良いものづくりを追求しています。
+                        </p>
+                    </div>
+                    <div class="item">
+                        <h3>Learning</h3>
+                        <p>
+                            現在、JavaScriptを中心に学習を進めており、参考書やインターネットを活用しながら理解を深めています。<br>
+                            新しい技術やツールにも積極的に挑戦し、実践的なスキルを身につけることを目指しています。
+                            将来的には、<br>より高い技術力を持つエンジニアとして価値を<br>提供できるよう、日々学習を継続しています。 </p>
+                    </div>
+                </div>
+            </section>
+        </div>
     </main>
+    <footer class="copy">
+        <small>&copy;JonathanYagi Portfolio 2026</small>
+    </footer>
 
     <script src="script.js"></script>
 </body>
