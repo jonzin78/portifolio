@@ -448,7 +448,7 @@ section {
 .career-list li::before {
     content: "";
     position: absolute;
-    left: -11px;
+    left: -23.5px;
     top: 8px;
     width: 5px;
     height: 5px;
