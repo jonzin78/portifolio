@@ -185,7 +185,7 @@ h2 {
     flex-direction: column;
     gap: 60px;
     color: #fff;
-    font-size: 35px;
+    font-size: 30px;
 }
 
 /* fazer a letra do menu flutuar */
@@ -248,7 +248,7 @@ section {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 600px;
+    width: 680px;
     /* サイズ */
     max-width: 80%;
 }
