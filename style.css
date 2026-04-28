@@ -923,6 +923,11 @@ section {
         text-align: center;
     }
 
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
     /* WORK */
 
     .work-grid {
@@ -979,8 +984,13 @@ section {
     }
 
     .single-meta {
-        flex-direction: column;
-        gap: 15px;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    .single-meta div {
+        flex: 1;
+        word-break: break-word;
     }
 
     /* 横並び → 縦並びにする */
@@ -1023,8 +1033,6 @@ section {
     /* footer */
 
     .footer {
-
         padding: 50px 20px 20px;
-
     }
 }
