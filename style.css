@@ -878,6 +878,21 @@ section {
         transform: translateX(-35%);
     }
 
+    h2 {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    /* botao de voltar */
+
+    .back-btn {
+        margin: 20px 0 30px 30px;
+        font-size: 12px;
+    }
+
     /* about */
     .about {
         flex-direction: column;
@@ -1003,5 +1018,13 @@ section {
         padding: 12px 24px;
         font-size: 14px;
         width: fit-content;
+    }
+
+    /* footer */
+
+    .footer {
+
+        padding: 50px 20px 20px;
+
     }
 }
