@@ -1074,7 +1074,7 @@ section {
     /* contact */
     .contact-btn {
         display: block;
-        margin: 0 auto;
+        margin: 15px auto;
         padding: 12px 24px;
         font-size: 14px;
         width: fit-content;
@@ -1084,5 +1084,14 @@ section {
 
     .footer {
         padding: 50px 20px 20px;
+    }
+
+    /*====================================
+                FOOTER MOBILE
+    ====================================*/
+
+    .footer-menu {
+        flex-wrap: wrap;
+        gap: 25px;
     }
 }
