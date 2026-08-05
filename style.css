@@ -812,33 +812,21 @@ section {
 
 
 .contact-toggle {
-
     background: none;
-
     border: none;
-
     color: #fff;
-
     font-size: 30px;
-
     font-family: inherit;
-
     letter-spacing: 2px;
-
     cursor: pointer;
-
     transition: .3s;
-
 }
 
 
 
 .contact-toggle:hover {
-
     transform: translateY(-6px) scale(1.1);
-
     opacity: .8;
-
 }
 
 
@@ -846,13 +834,9 @@ section {
 /* submenu escondido */
 
 .contact-submenu {
-
     display: none !important;
-
     gap: 25px !important;
-
     margin-top: 30px;
-
 }
 
 
@@ -860,9 +844,7 @@ section {
 /* submenu aberto */
 
 .contact-menu.open .contact-submenu {
-
     display: flex !important;
-
 }
 
 
@@ -870,11 +852,8 @@ section {
 /* tamanho dos contatos */
 
 .contact-submenu a {
-
     font-size: 20px;
-
     opacity: .8;
-
 }
 
 /* スマホサイズ */
