@@ -503,7 +503,7 @@ section {
 .work-card {
     max-width: 800px;
     /* ← 小さくする */
-    padding: 30px;
+    padding: 30px 30px 12px;
     /* ← 余白も縮小 */
     flex-shrink: 0;
     scroll-snap-align: start;
@@ -1003,7 +1003,7 @@ section {
     .work-card {
         max-width: 300px;
         /* ← 小さくする */
-        padding: 15px;
+        padding: 15px 10px 0;
         /* ← 余白も縮小 */
         flex-shrink: 0;
         scroll-snap-align: start;
